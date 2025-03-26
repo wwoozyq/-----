@@ -1,0 +1,44 @@
+site_name: My Docs
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  
+nav:
+  - 主页: index.md
+  - 人工智能基础:
+    - 人工智能学习/index.md 
+    - Page 1: 人工智能学习/1.人工智能初步.md
+
+theme:
+  features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.path
+      - navigation.top
+      - navigation.indexes
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: blue  # 浅色模式的主色调
+      accent: pink     # 浅色模式的强调色
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Dark mode
+    - scheme: slate
+      primary: deep purple  # 深色模式的主色调
+      accent: teal          # 深色模式的强调色
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: squidfunk
+
+extra_css:
+  - stylesheets/custom.css
